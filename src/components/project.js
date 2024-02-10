@@ -9,7 +9,7 @@ export const Project = ({title, description, stack, imageUrl}) =>{
             <div className="w-1/2 flex-col">
                 <p >{description}</p>
                 <ul className="mt-10">
-                    {stack.map(item => <li key={item.title} className="float-left mr-3 px-5 rounded-md bg-slate-900">{item}</li>)}
+                    {stack.map(item => <li key={item.title} className="float-left mr-3 px-5 rounded-md bg-slate-950">{item}</li>)}
                 </ul>
             </div>
             <div className="w-1/2 relative">

@@ -1,23 +1,29 @@
-
+'use client';
 import { Card } from "@/components/card";
 import { ItemSkill } from "@/components/itemSkill";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { FaFilePdf } from "react-icons/fa6";
-import { PROJECTS, SKILLS } from "./constants";
+import { FiSend } from "react-icons/fi";
+import { FaCopy, FaFilePdf } from "react-icons/fa6";
+import { EMAIL, PROJECTS, SKILLS } from "./constants";
 import { Project } from "@/components/project";
 
 
 export default function Home() {
 
   const header = () => (
-    <header className="text-center">
+    <header className="text-center justify-center">
       <h1 className="text-7xl mt-60">Cain S. Santiago López</h1>
       <h2 className="text-4xl mt-5">Full stack developer</h2>
       <h3 className="mt-5"> Developer with 7+ years of experience in the IT industry.</h3>
-      <div className="flex flex-row space-x-10 mt-5 item justify-center">
-        <FaGithub size="2em"/>
-        <FaLinkedin size="2em"/>
-        <FaFilePdf size="2em"/>
+      <div className="flex flex-row justify-center">
+      <input readOnly className="p-2 my-3 rounded w-60" type="email" value={EMAIL} id="emailValue"/>
+      <button title="Copy to clipboard" onClick={() => navigator.clipboard.writeText(EMAIL)} className="ml-3"><FaCopy size="1.5em"/></button>
+      <a className="my-auto ml-3" href={"mailto:" + EMAIL}><FiSend size="1.5em"/></a>
+      </div>
+      <div className="flex flex-row space-x-10 mt-5 justify-center">
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><FaGithub size="2em"/></a>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer"><FaLinkedin size="2em"/></a>
+        <a href="react_image.png" target="_blank"><FaFilePdf size="2em"/></a>
       </div>
     </header>
   );
@@ -48,18 +54,18 @@ export default function Home() {
 
   const projects = () => (
     <section className="mt-60">
-      <h1 className="text-3xl font-semibold text-center">Projects</h1>
-      <div>
+      <h1 className="text-3xl font-semibold text-center">Projects</h1>    
         {PROJECTS.map(project =>
-          <Project key={project.title} title={project.title} description={project.description}
+        <div className="hover:bg-slate-900" key={project.title}>
+          <Project title={project.title} description={project.description}
           stack={project.stack} imageUrl={project.imageUrl}/>  
+        </div>
         )}
-      </div>
     </section>
   );
 
   return (
-    <main className="flex flex-col justify-between p-24 bg-gradient-to-b from-black to-gray-800">
+    <main className="flex flex-col justify-between p-24 bg-gradient-to-b from-black to-gray-900">
       {header()}
       {about()}
       {projects()}

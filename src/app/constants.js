@@ -1,5 +1,7 @@
 import { FaJava, FaReact } from "react-icons/fa";
 
+export const EMAIL = "csantiago.lopez3@gmail.com";
+
 export const SKILLS = [
     {
         icon: FaReact,
