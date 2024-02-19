@@ -6,6 +6,9 @@ import { FiSend } from "react-icons/fi";
 import { FaCopy, FaFilePdf } from "react-icons/fa6";
 import { EMAIL, PROJECTS, SKILLS } from "./constants";
 import { Project } from "@/components/project";
+import { Hero } from "@/components/Hero";
+import { JobExp } from "@/components/JobExp";
+import { AboutMe } from "@/components/AboutMe";
 
 
 export default function Home() {
@@ -66,9 +69,15 @@ export default function Home() {
 
   return (
     <main className="flex flex-col justify-between p-24 bg-gradient-to-b from-black to-gray-900">
-      {header()}
-      {about()}
-      {projects()}
+      <section>
+        <Hero/>
+      </section>
+      <section>
+        <JobExp/>
+      </section>
+      <section>
+        <AboutMe/>
+      </section>
     </main>
   );
 }

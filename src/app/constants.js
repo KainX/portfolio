@@ -39,3 +39,27 @@ export const PROJECTS = [
         imageUrl: ""
     }
 ]
+
+export const JOB_EXPERIENCE = [
+    {
+        title: "Full stack developer",
+        company: "IBM",
+        date: "dec 2019 - actual",
+        description: "This is a description",
+        company_link: ""
+    },
+    {
+        title: "Full stack developer",
+        company: "IBM",
+        date: "dec 2016 - dec 2019",
+        description: "This is a description",
+        company_link: ""
+    },
+    {
+        title: "Android developer",
+        company: "Siteldi",
+        date: "jun 2014 - jun 2015",
+        description: "This is a description",
+        company_link: ""
+    }
+]
