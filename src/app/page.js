@@ -68,11 +68,12 @@ export default function Home() {
   );
 
   return (
-    <main className="flex flex-col justify-between p-24 bg-gradient-to-b from-black to-gray-900">
+    <main className="flex flex-col justify-between py-20 px-96 bg-gradient-to-b from-black to-gray-900">
       <section>
         <Hero/>
       </section>
-      <section>
+      <section className="mt-10 mx-auto container">
+        <h1 className="mb-6 text-3xl font-semibold gap-x-3">Professional experience</h1>
         <JobExp/>
       </section>
       <section>
