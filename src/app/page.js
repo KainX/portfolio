@@ -72,11 +72,12 @@ export default function Home() {
       <section>
         <Hero/>
       </section>
-      <section className="mt-10 mx-auto container">
-        <h1 className="mb-6 text-3xl font-semibold gap-x-3">Professional experience</h1>
+      <section className="mt-40 container">
+        <h1 className="mb-20 text-3xl font-semibold">Professional experience</h1>
         <JobExp/>
       </section>
-      <section>
+      <section className="mt-40 container">
+        <h1 className="mb-10 text-3xl font-semibold">About me</h1>
         <AboutMe/>
       </section>
     </main>

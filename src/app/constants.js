@@ -44,7 +44,7 @@ export const JOB_EXPERIENCE = [
     {
         title: "Full stack developer",
         company: "IBM",
-        date: "dec 2019 - actual",
+        date: "dec 2019 - now",
         description: `I have extensive experience developing RESTful APIs in Java using spring boot
         with spring security, log4j, resilience4j, lombok, etc., for one of the leading banks in USA, which are utilized by various services within the
         company for credit creation, credit limit adjustments, fraud analysis, and member notifications. Additionally, I
