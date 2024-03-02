@@ -1,3 +1,4 @@
+'use client';
 import { EMAIL } from "@/app/constants";
 import Image from "next/image";
 import { FaCopy, FaGithub, FaLinkedin } from "react-icons/fa";

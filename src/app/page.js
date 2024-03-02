@@ -1,4 +1,4 @@
-'use client';
+
 import { Hero } from "@/components/Hero";
 import { JobExp } from "@/components/JobExp";
 import { AboutMe } from "@/components/AboutMe";
