@@ -4,8 +4,8 @@ import { JobExpItem } from "./JobExpItem";
 export const JobExp = () =>
     <ol>
         {
-            JOB_EXPERIENCE.map(item =>(
-                <li>
+            JOB_EXPERIENCE.map((item, index) =>(
+                <li key={index}>
                     <JobExpItem {...item}/>
                 </li>))
         }
