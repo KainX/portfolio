@@ -7,7 +7,7 @@ import { FiSend } from "react-icons/fi";
 
 export const Hero = () =>
     <div>
-        <Image className="mx-20 rounded-full" alt="Hero image" src="/profile.jpeg" width={100} height={100}/>
+        <Image className="mx-20 rounded-full" alt="Hero image" src="./profile.jpeg" width={100} height={100}/>
         <h1 className="text-4xl font-bold text-white mt-4">Cain Santiago López</h1>
         <p className="mt-6 text-xl text-gray-300 [&>strong]:text-[#8876f9]">
             Developer with <strong>7+ years </strong>of experience in IT industry.
